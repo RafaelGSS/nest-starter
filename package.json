@@ -11,7 +11,7 @@
     "start": "nest start",
     "start:dev": "ts-node-dev -r tsconfig-paths/register --no-notify --transpileOnly --respawn ./src/main.ts",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node -r tsconfig-paths/register dist/main",
+    "start:prod": "node -r tsconfig-paths/register -r ts-node/register/transpile-only dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
